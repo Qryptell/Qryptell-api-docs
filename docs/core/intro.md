@@ -1,6 +1,8 @@
 ---
 sidebar_position: 1
 slug: /
+id: welcome
+title: 👋 welcome
 ---
 
 # Tutorial Intro

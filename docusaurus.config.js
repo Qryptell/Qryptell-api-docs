@@ -33,13 +33,37 @@ const config = {
         defaultLocale: 'en',
         locales: ['en'],
     },
-
+    plugins: [
+        // [require.resolve('@easyops-cn/docusaurus-search-local'),
+        //     {
+        //         hashed: true,
+        //         indexBlog: false,
+        //         docsRouteBasePath: '/',
+        //     },
+        // ],
+        [
+            '@docusaurus/plugin-content-docs',
+            ({
+                id: 'websocket',
+                path: 'docs/websocket',
+                routeBasePath: 'websocket',
+                editUrl: (params) => {
+                    return 'https://github.com/LoomingLunar/websocket/edit/main/' + params.docPath;
+                },
+                editCurrentVersion: true,
+                sidebarPath: require.resolve('./sidebarsWebsocket.js'),
+                showLastUpdateAuthor: false,
+                showLastUpdateTime: true,
+            }),
+        ],
+    ],
     presets: [
         [
             'classic',
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
+                    path: 'docs/core',
                     routeBasePath: '/', // Serve the docs at the site's root
                     sidebarPath: './sidebars.js',
                     // Please change this to your repo.
@@ -58,19 +82,28 @@ const config = {
             // Replace with your project's social card
             image: 'img/docusaurus-social-card.jpg',
             navbar: {
-                title: 'My Site',
+                title: 'Lunar Loom',
                 logo: {
                     alt: 'My Site Logo',
-                    src: 'img/logo.svg',
+                    src: 'img/LunarLoom.png',
                 },
                 items: [
                     {
-                        type: 'docSidebar',
-                        sidebarId: 'tutorialSidebar',
+                        type: 'doc',
+                        docId: 'welcome',
                         position: 'left',
-                        label: 'Tutorial',
+                        label: '🏠 Home',
                     },
-                    { to: '/blog', label: 'Blog', position: 'left' },
+                    {
+                        type: 'dropdown',
+                        label: '🧩 Services',
+                        position: 'left',
+                        items: [{
+                            type: 'docsVersion',
+                            label: 'websocket',
+                            docsPluginId: 'websocket',
+                        }],
+                    },
                     {
                         href: 'https://github.com/LoomingLunar/LunarLoom-backend',
                         label: 'GitHub',
@@ -86,7 +119,7 @@ const config = {
                         items: [
                             {
                                 label: 'Tutorial',
-                                to: '/docs/intro',
+                                to: '/',
                             },
                         ],
                     },
@@ -116,7 +149,7 @@ const config = {
                             },
                             {
                                 label: 'GitHub',
-                                href: 'https://github.com/facebook/docusaurus',
+                                href: 'https://github.com/LoomingLunar/',
                             },
                         ],
                     },
