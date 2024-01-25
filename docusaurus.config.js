@@ -49,7 +49,7 @@ const config = {
                 path: 'docs/websocket',
                 routeBasePath: 'websocket',
                 editUrl: (params) => {
-                    return 'https://github.com/LoomingLunar/websocket/edit/main/' + params.docPath;
+                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/websocket/' + params.docPath;
                 },
                 editCurrentVersion: true,
                 sidebarPath: require.resolve('./sidebarsWebsocket.js'),
@@ -64,13 +64,13 @@ const config = {
             /** @type {import('@docusaurus/preset-classic').Options} */
             ({
                 docs: {
-                    path: 'docs/core',
+                    path: 'docs/backend',
                     routeBasePath: '/', // Serve the docs at the site's root
                     sidebarPath: './sidebars.js',
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                        'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/backend/',
                 },
                 blog: false,
             }),
@@ -81,7 +81,7 @@ const config = {
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
             // Replace with your project's social card
-            image: 'img/docusaurus-social-card.jpg',
+            image: 'img/LunarLoom.png',
             navbar: {
                 title: 'Lunar Loom',
                 logo: {
@@ -124,23 +124,23 @@ const config = {
                             },
                         ],
                     },
-                    {
-                        title: 'Community',
-                        items: [
-                            {
-                                label: 'Stack Overflow',
-                                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                            },
-                            {
-                                label: 'Discord',
-                                href: 'https://discordapp.com/invite/docusaurus',
-                            },
-                            {
-                                label: 'Twitter',
-                                href: 'https://twitter.com/docusaurus',
-                            },
-                        ],
-                    },
+                    // {
+                    //     title: 'Community',
+                    //     items: [
+                    //         {
+                    //             label: 'Stack Overflow',
+                    //             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                    //         },
+                    //         {
+                    //             label: 'Discord',
+                    //             href: 'https://discordapp.com/invite/docusaurus',
+                    //         },
+                    //         {
+                    //             label: 'Twitter',
+                    //             href: 'https://twitter.com/docusaurus',
+                    //         },
+                    //     ],
+                    // },
                     {
                         title: 'More',
                         items: [
@@ -151,7 +151,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} Lunar Loom, E2E Chat Application`,
             },
             prism: {
                 theme: prismThemes.github,
