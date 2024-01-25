@@ -10,7 +10,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 const config = {
     title: 'Lunar Loom',
     tagline: 'End To End Encrypted Chat App',
-    favicon: 'img/favicon.ico',
+    favicon: 'img/LunarLoom.png',
 
     // Set the production url of your site here
     url: 'https://your-docusaurus-site.example.com',
