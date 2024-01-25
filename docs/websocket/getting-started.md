@@ -34,12 +34,7 @@ cd LunarLoom-websocket-service
 go mod tidy
 ```
 
-3. **Run the server**
-```bash
-make run
-```
-
-4. **Set Enviornment variables**
+3. **Set Enviornment variables**
 
 You need to set enviorment variabels to run the servic properly, those are
 
@@ -54,6 +49,11 @@ REDIS_IP=localhost:6379
 AUTH_SECRET=secret
 ```
 
+4. **Run the server**
+```bash
+make run
+```
+
 ## Running in Docker
 
 ### Prerequisites
@@ -65,12 +65,16 @@ Before you begin, make sure you have the following prerequisites installed on yo
 
 ### Steps
 
+1. **Get docker compose file**
+
+Download the docker compose [file](https://github.com/LoomingLunar/LunarLoom-websocket-service/blob/main/docker-compose.yaml) or clone the websocket service and navigate to the directory.
+
 1. **Run using docker**
 ```bash
 docker-compose up -d
 ```
 
-to stop running server run
+To stop running the server
 ```bash
 docker-compose down
 ```
