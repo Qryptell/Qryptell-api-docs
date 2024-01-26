@@ -87,6 +87,21 @@ const config = {
                 showLastUpdateTime: true,
             }),
         ],
+        [
+            '@docusaurus/plugin-content-docs',
+            ({
+                id: 'user',
+                path: 'docs/user',
+                routeBasePath: 'user',
+                editUrl: (params) => {
+                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/user/' + params.docPath;
+                },
+                editCurrentVersion: true,
+                sidebarPath: require.resolve('./sidebarsUser.js'),
+                showLastUpdateAuthor: false,
+                showLastUpdateTime: true,
+            }),
+        ],
     ],
     presets: [
         [
@@ -144,6 +159,11 @@ const config = {
                                 type: 'docsVersion',
                                 label: 'mail',
                                 docsPluginId: 'mail',
+                            },
+                            {
+                                type: 'docsVersion',
+                                label: 'user',
+                                docsPluginId: 'user',
                             }
                         ],
                     },
