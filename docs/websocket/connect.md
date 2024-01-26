@@ -23,13 +23,11 @@ replace `localhost:9000` with according url/port.
 ws://localhost:9000/ws?Authentication=jwt.access.token
 ```
 
-## Making websocket connection and disconnecting
-
-### Connecting websocket
+## Connecting websocket
 
 Once you have the WebSocket URL, you can establish a connection from your client application using the WebSocket API provided by your programming language or framework.
 
-#### Websocket connection Example
+### Websocket connection Example
 
 ```javascript
 const auth_token = "jwt authentication token"
@@ -41,8 +39,6 @@ Store and use this socket to send and receive messages using websocket.
 ### Disconnecting websocket
 
 The websocket connection need to be closed after the use or when user leaves the page.
-
-#### Websocket disconencting example
 
 ```javascript
 socket.close()
