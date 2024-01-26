@@ -57,6 +57,21 @@ const config = {
                 showLastUpdateTime: true,
             }),
         ],
+        [
+            '@docusaurus/plugin-content-docs',
+            ({
+                id: 'auth',
+                path: 'docs/auth',
+                routeBasePath: 'auth',
+                editUrl: (params) => {
+                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/auth/' + params.docPath;
+                },
+                editCurrentVersion: true,
+                sidebarPath: require.resolve('./sidebarsAuth.js'),
+                showLastUpdateAuthor: false,
+                showLastUpdateTime: true,
+            }),
+        ],
     ],
     presets: [
         [
@@ -99,11 +114,18 @@ const config = {
                         type: 'dropdown',
                         label: '🧩 Services',
                         position: 'left',
-                        items: [{
-                            type: 'docsVersion',
-                            label: 'websocket',
-                            docsPluginId: 'websocket',
-                        }],
+                        items: [
+                            {
+                                type: 'docsVersion',
+                                label: 'websocket',
+                                docsPluginId: 'websocket',
+                            },
+                            {
+                                type: 'docsVersion',
+                                label: 'auth',
+                                docsPluginId: 'auth',
+                            }
+                        ],
                     },
                     {
                         href: 'https://github.com/LoomingLunar/LunarLoom-backend',
