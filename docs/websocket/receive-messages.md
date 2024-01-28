@@ -5,7 +5,7 @@ sidebar_position: 5
 
 # Receiving Messages
 
-Discover how to handle incoming messages from the Lunar Loom WebSocket server in your client applications.
+Discover how to handle incoming messages from the LunarLoom WebSocket server in your client applications.
 
 ## Message Format
 

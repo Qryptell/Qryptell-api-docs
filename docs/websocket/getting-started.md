@@ -4,9 +4,9 @@ sidebar_position: 2
 ---
 # Getting Started
 
-Welcome to the Lunar Loom WebSocket Service "Getting Started" guide! Follow these steps to set up and run the WebSocket service locally for testing purposes.
+Welcome to the LunarLoom Auth Service "Getting Started" guide! Follow these steps to set up and run the Auth service locally for testing purposes.
 
-***Note: Using a WebSocket server as a separate service is not recommended; it should only be employed for testing purposes.***
+***Note: Using a Auth server as a separate service is not recommended; it should only be employed for testing purposes.***
 
 ## Running locally
 
@@ -14,24 +14,25 @@ Welcome to the Lunar Loom WebSocket Service "Getting Started" guide! Follow thes
 
 Before you begin, make sure you have the following prerequisites installed on your machine:
 
-- **Go:** [Install Go](https://golang.org/doc/install)
-- **Make:** Ensure that `make` is installed on your machine.
-- **Redis:** [Install Redis](https://redis.io/download)
+- **Node:** [Install Go](https://nodejs.org/en/download)
+- **NPM:** [Install NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- **RabbitMQ:** [Install Redis](https://redis.io/download)
+- **MySQL:** [Install RabbitMQ](https://www.rabbitmq.com/download.html)
 
-Running the WebSocket service locally requires Redis as a dependency. Ensure Redis is running on your machine before starting the WebSocket service.
+Running the Auth service locally requires Redis as a dependency. Ensure Redis is running on your machine before starting the Auth service.
 
 ### Steps
 
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/LoomingLunar/LunarLoom-websocket-service
-cd LunarLoom-websocket-service
+git clone https://github.com/LoomingLunar/LunarLoom-auth-service
+cd LunarLoom-auth-service
 ```
 
 2. **Install dependencies**
 ```bash
-go mod tidy
+npm i
 ```
 
 3. **Set Enviornment variables**
@@ -81,8 +82,8 @@ docker-compose down
 
 ## Important Note
 
-Running the WebSocket service directly on your host machine is suitable for local testing and development purposes. However, for production deployments, it is recommended to integrate the WebSocket service as part of a larger infrastructure using technologies like Kubernetes or other container orchestration solutions.
+Running the Auth service directly on your host machine is suitable for local testing and development purposes. However, for production deployments, it is recommended to integrate the Auth service as part of a larger infrastructure using technologies like Kubernetes or other container orchestration solutions.
 
-If you encounter any issues or have questions, feel free to refer to the comprehensive WebSocket Service Documentation or reach out to our support team.
+If you encounter any issues or have questions, feel free to refer to the comprehensive Auth Service Documentation or reach out to our support team.
 
-Happy testing with Lunar Loom WebSocket Service!
+Happy testing with LunarLoom Auth Service!

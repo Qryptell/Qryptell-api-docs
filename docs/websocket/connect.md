@@ -5,11 +5,11 @@ sidebar_position: 3
 
 # Web Socket Connection
 
-In this section, you will learn how to connect to the Lunar Loom WebSocket server from your client applications. Establishing a WebSocket connection allows your clients to send and receive real-time messages, participate in chat conversations, and receive updates instantly.
+In this section, you will learn how to connect to the LunarLoom WebSocket server from your client applications. Establishing a WebSocket connection allows your clients to send and receive real-time messages, participate in chat conversations, and receive updates instantly.
 
 ## WebSocket URL
 
-To connect to the Lunar Loom WebSocket server, use the following WebSocket URL format:
+To connect to the LunarLoom WebSocket server, use the following WebSocket URL format:
 ```http
 ws://<server_address>:9000/ws?Authentication=<authentication_token>
 ```

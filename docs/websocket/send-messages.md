@@ -5,7 +5,7 @@ sidebar_position: 4
 
 # Sending Messages
 
-Explore how to send messages to the Lunar Loom WebSocket server from your client applications and handle response.
+Explore how to send messages to the LunarLoom WebSocket server from your client applications and handle response.
 
 ## Send Message
 
@@ -86,7 +86,7 @@ socket.send(JSON.stringify(userMessage));
 
 ## Handle Response
 
-Handle acknowledgment messages (ACK_MSG) received from the Lunar Loom WebSocket server in your client applications.
+Handle acknowledgment messages (ACK_MSG) received from the LunarLoom WebSocket server in your client applications.
 
 When you send a message to the WebSocket server, you may receive an acknowledgment message (ACK_MSG) in response. This message confirms that the server has received and processed the message successfully.
 
