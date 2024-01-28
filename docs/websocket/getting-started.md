@@ -14,12 +14,11 @@ Welcome to the LunarLoom Auth Service "Getting Started" guide! Follow these step
 
 Before you begin, make sure you have the following prerequisites installed on your machine:
 
-- **Node:** [Install Go](https://nodejs.org/en/download)
+- **Node:** [Install Node.js](https://nodejs.org/en/download)
 - **NPM:** [Install NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- **RabbitMQ:** [Install Redis](https://redis.io/download)
-- **MySQL:** [Install RabbitMQ](https://www.rabbitmq.com/download.html)
-
-Running the Auth service locally requires Redis as a dependency. Ensure Redis is running on your machine before starting the Auth service.
+- **RabbitMq:** [Install RabbitMQ](https://www.rabbitmq.com/download.html)
+- **MySQL:** [Install MySQL](https://www.mysql.com/downloads/)
+Running the Auth service locally requires RabbitMq and MySQL as a dependency. Ensure RabbitMq and MySQL is running on your machine before starting the Auth service.
 
 ### Steps
 
@@ -39,45 +38,37 @@ npm i
 
 You need to set enviorment variabels to run the servic properly, those are
 
-- **PORT**   port that server needed to run (if you not sepecify it select 9000 as default port)
-- **REDIS_IP**   the port redis is running (service uses redis pub-sub for sending messages accross the server)
-- **AUTH_SECRET**   secret used for jwt token
+- **PORT**   port that server needed to run 
+- **RABBIT_MQ_URL**   the url of rabbitmq message broker 
+- **JWT_ACCESS_SECRET**   secret used for jwt token
+- **DB_HOST**   host name for mysql configuartion
+- **DB_USER**   user name for mysql configuartion
+- **DB_PASSWORD**   password of specified user for mysql configuartion
+- **CLIENT_URL**   url which client is running
+- **TEMP_USER_EXPIRY_TIME**   expiry time to remove user data from db with uncompleted register actions
+- **USER_SERVICE_URL**   url which user service is running. in sum situations auth service need to connect to user service
+
 
 ##### Sample enviornment file
 ```env
-PORT=9000
-REDIS_IP=localhost:6379
-AUTH_SECRET=secret
+PORT = 4000
+RABBIT_MQ_URL="amqp://localhost"
+JWT_ACCESS_SECRET =  "secret"
+DB_HOST="localhost"
+DB_USER="root"
+DB_PASSWORD="pass"
+CLIENT_URL="http://localhost:3000"
+TEMP_USER_EXPIRY_TIME = 1000
+USER_SERVICE_URL = "http://localhost:4001"```
+
+4. **Run the server for development**
+```bash
+npm run dev
 ```
 
-4. **Run the server**
+4. **Run the server for production**
 ```bash
-make run
-```
-
-## Running in Docker
-
-### Prerequisites
-
-Before you begin, make sure you have the following prerequisites installed on your machine:
-
-- **Docker:** [Install Docker](https://docs.docker.com/get-docker/)
-- **Docker Compose:** [Install Docker Compose](https://docs.docker.com/compose/install/) (if not included with Docker installation)
-
-### Steps
-
-1. **Get docker compose file**
-
-Download the docker compose [file](https://github.com/LoomingLunar/LunarLoom-websocket-service/blob/main/docker-compose.yaml) or clone the websocket service and navigate to the directory.
-
-1. **Run using docker**
-```bash
-docker-compose up -d
-```
-
-To stop running the server
-```bash
-docker-compose down
+npm start
 ```
 
 ## Important Note
