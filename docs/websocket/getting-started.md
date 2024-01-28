@@ -4,9 +4,9 @@ sidebar_position: 2
 ---
 # Getting Started
 
-Welcome to the LunarLoom Auth Service "Getting Started" guide! Follow these steps to set up and run the Auth service locally for testing purposes.
+Welcome to the LunarLoom WebSocket Service "Getting Started" guide! Follow these steps to set up and run the WebSocket service locally for testing purposes.
 
-***Note: Using a Auth server as a separate service is not recommended; it should only be employed for testing purposes.***
+***Note: Using a WebSocket server as a separate service is not recommended; it should only be employed for testing purposes.***
 
 ## Running locally
 
@@ -14,67 +14,75 @@ Welcome to the LunarLoom Auth Service "Getting Started" guide! Follow these step
 
 Before you begin, make sure you have the following prerequisites installed on your machine:
 
-- **Node:** [Install Node.js](https://nodejs.org/en/download)
-- **NPM:** [Install NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-- **RabbitMq:** [Install RabbitMQ](https://www.rabbitmq.com/download.html)
-- **MySQL:** [Install MySQL](https://www.mysql.com/downloads/)
-Running the Auth service locally requires RabbitMq and MySQL as a dependency. Ensure RabbitMq and MySQL is running on your machine before starting the Auth service.
+- **Go:** [Install Go](https://golang.org/doc/install)
+- **Make:** Ensure that `make` is installed on your machine.
+- **Redis:** [Install Redis](https://redis.io/download)
+
+Running the WebSocket service locally requires Redis as a dependency. Ensure Redis is running on your machine before starting the WebSocket service.
 
 ### Steps
 
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/LoomingLunar/LunarLoom-auth-service
-cd LunarLoom-auth-service
+git clone https://github.com/LoomingLunar/LunarLoom-websocket-service
+cd LunarLoom-websocket-service
 ```
 
 2. **Install dependencies**
 ```bash
-npm i
+go mod tidy
 ```
 
 3. **Set Enviornment variables**
 
 You need to set enviorment variabels to run the servic properly, those are
 
-- **PORT**   port that server needed to run 
-- **RABBIT_MQ_URL**   the url of rabbitmq message broker 
-- **JWT_ACCESS_SECRET**   secret used for jwt token
-- **DB_HOST**   host name for mysql configuartion
-- **DB_USER**   user name for mysql configuartion
-- **DB_PASSWORD**   password of specified user for mysql configuartion
-- **CLIENT_URL**   url which client is running
-- **TEMP_USER_EXPIRY_TIME**   expiry time to remove user data from db with uncompleted register actions
-- **USER_SERVICE_URL**   url which user service is running. in sum situations auth service need to connect to user service
-
+- **PORT**   port that server needed to run (if you not sepecify it select 9000 as default port)
+- **REDIS_IP**   the port redis is running (service uses redis pub-sub for sending messages accross the server)
+- **AUTH_SECRET**   secret used for jwt token
 
 ##### Sample enviornment file
 ```env
-PORT = 4000
-RABBIT_MQ_URL="amqp://localhost"
-JWT_ACCESS_SECRET =  "secret"
-DB_HOST="localhost"
-DB_USER="root"
-DB_PASSWORD="pass"
-CLIENT_URL="http://localhost:3000"
-TEMP_USER_EXPIRY_TIME = 1000
-USER_SERVICE_URL = "http://localhost:4001"```
-
-4. **Run the server for development**
-```bash
-npm run dev
+PORT=9000
+REDIS_IP=localhost:6379
+AUTH_SECRET=secret
 ```
 
-4. **Run the server for production**
+4. **Run the server**
 ```bash
-npm start
+make run
+```
+
+## Running in Docker
+
+### Prerequisites
+
+Before you begin, make sure you have the following prerequisites installed on your machine:
+
+- **Docker:** [Install Docker](https://docs.docker.com/get-docker/)
+- **Docker Compose:** [Install Docker Compose](https://docs.docker.com/compose/install/) (if not included with Docker installation)
+
+### Steps
+
+1. **Get docker compose file**
+
+Download the docker compose [file](https://github.com/LoomingLunar/LunarLoom-websocket-service/blob/main/docker-compose.yaml) or clone the websocket service and navigate to the directory.
+
+1. **Run using docker**
+```bash
+docker-compose up -d
+```
+
+To stop running the server
+```bash
+docker-compose down
 ```
 
 ## Important Note
 
-Running the Auth service directly on your host machine is suitable for local testing and development purposes. However, for production deployments, it is recommended to integrate the Auth service as part of a larger infrastructure using technologies like Kubernetes or other container orchestration solutions.
+Running the WebSocket service directly on your host machine is suitable for local testing and development purposes. However, for production deployments, it is recommended to integrate the WebSocket service as part of a larger infrastructure using technologies like Kubernetes or other container orchestration solutions.
 
-If you encounter any issues or have questions, feel free to refer to the comprehensive Auth Service Documentation or reach out to our support team.
+If you encounter any issues or have questions, feel free to refer to the comprehensive WebSocket Service Documentation or reach out to our support team.
 
-Happy testing with LunarLoom Auth Service!
+Happy testing with LunarLoom WebSocket Service!
