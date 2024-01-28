@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 # Getting Started
 
-Welcome to the Lunar Loom WebSocket Service "Getting Started" guide! Follow these steps to set up and run the WebSocket service locally for testing purposes.
+Welcome to the LunarLoom WebSocket Service "Getting Started" guide! Follow these steps to set up and run the WebSocket service locally for testing purposes.
 
 ***Note: Using a WebSocket server as a separate service is not recommended; it should only be employed for testing purposes.***
 
@@ -85,4 +85,4 @@ Running the WebSocket service directly on your host machine is suitable for loca
 
 If you encounter any issues or have questions, feel free to refer to the comprehensive WebSocket Service Documentation or reach out to our support team.
 
-Happy testing with Lunar Loom WebSocket Service!
+Happy testing with LunarLoom WebSocket Service!

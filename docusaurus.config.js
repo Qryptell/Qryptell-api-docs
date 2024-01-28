@@ -8,7 +8,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Lunar Loom',
+    title: 'LunarLoom',
     tagline: 'End To End Encrypted Chat App',
     favicon: 'img/LunarLoom.png',
 
@@ -128,7 +128,7 @@ const config = {
             // Replace with your project's social card
             image: 'img/LunarLoom.png',
             navbar: {
-                title: 'Lunar Loom',
+                title: 'LunarLoom',
                 logo: {
                     alt: 'My Site Logo',
                     src: 'img/LunarLoom.png',
@@ -213,7 +213,7 @@ const config = {
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Lunar Loom, E2E Chat Application`,
+                copyright: `Copyright © ${new Date().getFullYear()} LunarLoom, E2E Chat Application`,
             },
             prism: {
                 theme: prismThemes.github,
