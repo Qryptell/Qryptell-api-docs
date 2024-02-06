@@ -76,13 +76,13 @@ received from the WebSocket server:
 ### User Message
 ```json
 {
-	"id": "f3bd13e8-0cfb-4ef4-a7e2-f29fb43478d3",
-	"from": "john",
-	"to": "rick",
-	"type": "USER_MSG",
-	"time": "2024-01-26T09:06:03Z",
-	"content": "TEXT_MESSAGE",
-	"message": "hai"
+    "id": "f3bd13e8-0cfb-4ef4-a7e2-f29fb43478d3",
+    "from": "john",
+    "to": "rick",
+    "type": "USER_MSG",
+    "time": "2024-01-26T09:06:03Z",
+    "content": "TEXT_MESSAGE",
+    "message": "hai"
 }
 ```
 
@@ -92,12 +92,12 @@ This message represents a user message where "hai" is sent from "john" to "rick"
 
 ```json
 {
-	"id": "23213123",
+    "id": "23213123",
     "from": "john",
-	"type": "ACK_MSG",
-	"time": "2024-01-26T09:06:03Z",
-	"content": "MESSAGE_RECEIVED",
-	"message": "f3bd13e8-0cfb-4ef4-a7e2-f29fb43478d3"
+    "type": "ACK_MSG",
+    "time": "2024-01-26T09:06:03Z",
+    "content": "MESSAGE_RECEIVED",
+    "message": "f3bd13e8-0cfb-4ef4-a7e2-f29fb43478d3"
 }
 ```
 This message represents an acknowledgment message where the server confirms that the message with the ID 232131232

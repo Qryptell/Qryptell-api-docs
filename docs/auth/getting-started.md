@@ -59,17 +59,19 @@ DB_USER="root"
 DB_PASSWORD="pass"
 CLIENT_URL="http://localhost:3000"
 TEMP_USER_EXPIRY_TIME = 1000
-USER_SERVICE_URL = "http://localhost:4001"```
-
-4. **Run the server for development**
-```bash
-npm run dev
+USER_SERVICE_URL = "http://localhost:4001"
 ```
 
-4. **Run the server for production**
-```bash
-npm start
-```
+4. **Run Server**
+    * **Run the server for development**
+    ```bash
+    npm run dev
+    ```
+
+    * **Run the server for production**
+    ```bash
+    npm run deploy
+    ```
 
 ## Important Note
 

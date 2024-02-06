@@ -147,11 +147,6 @@ const config = {
                         items: [
                             {
                                 type: 'docsVersion',
-                                label: 'websocket',
-                                docsPluginId: 'websocket',
-                            },
-                            {
-                                type: 'docsVersion',
                                 label: 'auth',
                                 docsPluginId: 'auth',
                             },
@@ -162,9 +157,14 @@ const config = {
                             },
                             {
                                 type: 'docsVersion',
+                                label: 'websocket',
+                                docsPluginId: 'websocket',
+                            },
+                            {
+                                type: 'docsVersion',
                                 label: 'user',
                                 docsPluginId: 'user',
-                            }
+                            },
                         ],
                     },
                     {
