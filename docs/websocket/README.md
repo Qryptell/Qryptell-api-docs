@@ -3,9 +3,9 @@ title: 👋 Welcome
 sidebar_position: 1
 ---
 
-# Welcome to LunarLoom WebSocket Service!
+# Welcome to Qryptell WebSocket Service!
 
-The LunarLoom WebSocket Service is a powerful tool designed to facilitate real-time communication in your End-to-End (E2E) chat application. It leverages WebSocket technology to establish a seamless and efficient bidirectional communication channel between the client and server.
+The Qryptell WebSocket Service is a powerful tool designed to facilitate real-time communication in your End-to-End (E2E) chat application. It leverages WebSocket technology to establish a seamless and efficient bidirectional communication channel between the client and server.
 
 ## What WebSocket Service Offers
 
@@ -17,10 +17,10 @@ The LunarLoom WebSocket Service is a powerful tool designed to facilitate real-t
 
 ## Getting Started
 
-To begin using the LunarLoom WebSocket Service, follow our [Getting Started Guide](/websocket/getting-started). This guide will walk you through the essential steps to set up the WebSocket connection, authenticate your application, and start sending and receiving messages in real time.
+To begin using the Qryptell WebSocket Service, follow our [Getting Started Guide](/websocket/getting-started). This guide will walk you through the essential steps to set up the WebSocket connection, authenticate your application, and start sending and receiving messages in real time.
 
 If you have any questions or need assistance, feel free to explore our comprehensive documentation or reach out to our support team.
 
-Get ready to unlock the full potential of real-time communication with LunarLoom WebSocket Service!
+Get ready to unlock the full potential of real-time communication with Qryptell WebSocket Service!
 
 [Start Getting Started Guide](/websocket/getting-started)

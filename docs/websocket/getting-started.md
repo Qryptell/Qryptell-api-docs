@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 # Getting Started
 
-Welcome to the LunarLoom WebSocket Service "Getting Started" guide! Follow these steps to set up and run the WebSocket service locally for testing purposes.
+Welcome to the Qryptell WebSocket Service "Getting Started" guide! Follow these steps to set up and run the WebSocket service locally for testing purposes.
 
 ***Note: Using a WebSocket server as a separate service is not recommended; it should only be employed for testing purposes.***
 
@@ -25,8 +25,8 @@ Running the WebSocket service locally requires Redis as a dependency. Ensure Red
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/LoomingLunar/LunarLoom-websocket-service
-cd LunarLoom-websocket-service
+git clone https://github.com/Qryptell/Qryptell-websocket-service
+cd Qryptell-websocket-service
 ```
 
 2. **Install dependencies**
@@ -67,7 +67,7 @@ Before you begin, make sure you have the following prerequisites installed on yo
 
 1. **Get docker compose file**
 
-Download the docker compose [file](https://github.com/LoomingLunar/LunarLoom-websocket-service/blob/main/docker-compose.yaml) or clone the websocket service and navigate to the directory.
+Download the docker compose [file](https://github.com/Qryptell/Qryptell-websocket-service/blob/main/docker-compose.yaml) or clone the websocket service and navigate to the directory.
 
 1. **Run using docker**
 ```bash
@@ -85,4 +85,4 @@ Running the WebSocket service directly on your host machine is suitable for loca
 
 If you encounter any issues or have questions, feel free to refer to the comprehensive WebSocket Service Documentation or reach out to our support team.
 
-Happy testing with LunarLoom WebSocket Service!
+Happy testing with Qryptell WebSocket Service!

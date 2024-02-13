@@ -4,7 +4,7 @@ sidebar_position: 2
 ---
 # Getting Started
 
-Welcome to the LunarLoom Auth Service "Getting Started" guide! Follow these steps to set up and run the Auth service locally for testing purposes.
+Welcome to the Qryptell Auth Service "Getting Started" guide! Follow these steps to set up and run the Auth service locally for testing purposes.
 
 ***Note: Using a Auth server as a separate service is not recommended; it should only be employed for testing purposes.***
 
@@ -25,8 +25,8 @@ Running the Auth service locally requires RabbitMq and MySQL as a dependency. En
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/LoomingLunar/LunarLoom-auth-service
-cd LunarLoom-auth-service
+git clone https://github.com/Qryptell/Qryptell-auth-service
+cd Qryptell-auth-service
 ```
 
 2. **Install dependencies**
@@ -79,4 +79,4 @@ Running the Auth service directly on your host machine is suitable for local tes
 
 If you encounter any issues or have questions, feel free to refer to the comprehensive Auth Service Documentation or reach out to our support team.
 
-Happy testing with LunarLoom Auth Service!
+Happy testing with Qryptell Auth Service!

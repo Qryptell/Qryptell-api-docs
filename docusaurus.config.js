@@ -8,20 +8,20 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'LunarLoom',
+    title: 'Qryptell',
     tagline: 'End To End Encrypted Chat App',
     favicon: 'img/LunarLoom.png',
 
     // Set the production url of your site here
-    url: 'https://LoomingLunar.github.io',
+    url: 'https://Qryptell.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: '/LunarLoom-api-docs',
+    baseUrl: '/Qryptell-api-docs',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'LoomingLunar', // Usually your GitHub org/user name.
-    projectName: 'LunarLoom-api-docs', // Usually your repo name.
+    organizationName: 'qryptell', // Usually your GitHub org/user name.
+    projectName: 'Qryptell-api-docs', // Usually your repo name.
     trailingSlash: false,
 
     onBrokenLinks: 'throw',
@@ -49,7 +49,7 @@ const config = {
                 path: 'docs/websocket',
                 routeBasePath: 'websocket',
                 editUrl: (params) => {
-                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/websocket/' + params.docPath;
+                    return 'https://github.com/Qryptell/Qryptell-api-docs/edit/main/docs/websocket/' + params.docPath;
                 },
                 editCurrentVersion: true,
                 sidebarPath: require.resolve('./sidebarsWebsocket.js'),
@@ -64,7 +64,7 @@ const config = {
                 path: 'docs/auth',
                 routeBasePath: 'auth',
                 editUrl: (params) => {
-                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/auth/' + params.docPath;
+                    return 'https://github.com/Qryptell/Qryptell-api-docs/edit/main/docs/auth/' + params.docPath;
                 },
                 editCurrentVersion: true,
                 sidebarPath: require.resolve('./sidebarsAuth.js'),
@@ -79,7 +79,7 @@ const config = {
                 path: 'docs/mail',
                 routeBasePath: 'mail',
                 editUrl: (params) => {
-                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/mail/' + params.docPath;
+                    return 'https://github.com/Qryptell/Qryptell-api-docs/edit/main/docs/mail/' + params.docPath;
                 },
                 editCurrentVersion: true,
                 sidebarPath: require.resolve('./sidebarsMail.js'),
@@ -94,7 +94,7 @@ const config = {
                 path: 'docs/user',
                 routeBasePath: 'user',
                 editUrl: (params) => {
-                    return 'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/user/' + params.docPath;
+                    return 'https://github.com/Qryptell/Qryptell-api-docs/edit/main/docs/user/' + params.docPath;
                 },
                 editCurrentVersion: true,
                 sidebarPath: require.resolve('./sidebarsUser.js'),
@@ -115,7 +115,7 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/LoomingLunar/LunarLoom-api-docs/edit/main/docs/backend/',
+                        'https://github.com/Qryptell/Qryptell-api-docs/edit/main/docs/backend/',
                 },
                 blog: false,
             }),
@@ -128,7 +128,7 @@ const config = {
             // Replace with your project's social card
             image: 'img/LunarLoom.png',
             navbar: {
-                title: 'LunarLoom',
+                title: 'Qryptell',
                 logo: {
                     alt: 'My Site Logo',
                     src: 'img/LunarLoom.png',
@@ -168,7 +168,7 @@ const config = {
                         ],
                     },
                     {
-                        href: 'https://github.com/LoomingLunar/LunarLoom-backend',
+                        href: 'https://github.com/Qryptell/Qryptell-backend',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -208,12 +208,12 @@ const config = {
                         items: [
                             {
                                 label: 'GitHub',
-                                href: 'https://github.com/LoomingLunar/',
+                                href: 'https://github.com/Qryptell/',
                             },
                         ],
                     },
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} LunarLoom, E2E Chat Application`,
+                copyright: `Copyright © ${new Date().getFullYear()} Qryptell, E2E Chat Application`,
             },
             prism: {
                 theme: prismThemes.github,
